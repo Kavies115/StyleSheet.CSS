@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="989.0" prefWidth="1622.0" style="-fx-background-color: #2F2235;" stylesheets="@../default/StyleSheet.CSS" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.code.controllers.SelectScreenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e4959" height="966.0" layoutX="13.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" width="1599.0" />
+      <Text fill="GOLD" layoutX="856.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Players" textAlignment="CENTER" wrappingWidth="317.8935546875">
+         <font>
+            <Font name="Cambria" size="45.0" />
+         </font>
+      </Text>
+      <TextField fx:id="playerTextbox" layoutX="901.0" layoutY="120.0" prefHeight="38.0" prefWidth="228.0" style="-fx-background-color: #2F2235; -fx-text-fill: Gold;">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font></TextField>
+      <ListView fx:id="playerListBox" editable="true" layoutX="901.0" layoutY="226.0" onMouseClicked="#deletePlayer" prefHeight="713.0" prefWidth="228.0" style="-fx-background-color: #2F2235;" stylesheets="@../default/StyleSheet.CSS" />
+      <Button layoutX="945.0" layoutY="166.0" mnemonicParsing="false" onAction="#enterPlayerName" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: #2F2235; -fx-background-radius: 40;" text="ENTER" textFill="GOLD">
+         <font>
+            <Font name="Eras Medium ITC" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="1460.0" layoutY="21.0" mnemonicParsing="false" onAction="#backButton" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: #2F2235; -fx-background-radius: 40;" text="BACK" textFill="GOLD">
+         <font>
+            <Font name="Eras Medium ITC" size="26.0" />
+         </font>
+      </Button>
+      <Text fill="GOLD" layoutX="1184.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick Topics" textAlignment="CENTER" wrappingWidth="251.8935546875">
+         <font>
+            <Font name="Cambria" size="45.0" />
+         </font>
+      </Text>
+      <ListView fx:id="topicListBox" layoutX="1196.0" layoutY="225.0" onMouseClicked="#deleteTopic" prefHeight="713.0" prefWidth="228.0" style="-fx-background-color: #2F2235;" />
+      <Button layoutX="1240.0" layoutY="165.0" mnemonicParsing="false" onAction="#enterTopic" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: #2F2235; -fx-background-radius: 40;" text="ENTER" textFill="GOLD">
+         <font>
+            <Font name="Eras Medium ITC" size="20.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="topicComboBox" layoutX="1196.0" layoutY="119.0" prefHeight="38.0" prefWidth="228.0" style="-fx-background-color: #2F2235;" />
+      <Button layoutX="1460.0" layoutY="909.0" mnemonicParsing="false" onAction="#startButton" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #2F2235; -fx-background-radius: 40;" text="START" textFill="GOLD">
+         <font>
+            <Font name="Eras Medium ITC" size="26.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="744.0" fitWidth="723.0" layoutX="76.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imgs/ezgif-1-7f6125fec2.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
